@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.grid-container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px 1fr 0.5fr 0.5fr 0.5fr 50px;
+}
+
+.greenbar {
+  width: 100%;
+  height: 50px;
+  background-color: #7ed956;
+  grid-column: 1 / 5;
+}
+
+.greenbar--top {
+  grid-row: 1 / 2;
+}
+
+.greenbar--bottom {
+  grid-row: 6 / 7;
+}
+
+.header,
+.table,
+.footer {
+  grid-column: 1 / 5;
+}
+
+.header {
+  margin-bottom: 72px;
+  display: flex;
+  justify-content: space-between;
+  grid-row: 2 / 3;
+}
+
+.header__hero img {
+  width: 250px;
+  margin: 24px 0;
+}
+
+.header__cliente h2 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.header__cliente h2 span {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.header__cliente p:nth-child(2) {
+  font-weight: 500;
+}
+
+.header__title {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  border-top: 5px solid #007e34;
+}
+
+.header__title h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.header__title p {
+  text-align: end;
+}
+
+.table {
+  margin-bottom: 48px;
+  grid-row: 3 / 5;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  border-bottom: 4px solid #007e34;
+}
+
+th,
+td {
+  border-bottom: 1px solid #999;
+}
+
+tr td:first-child,
+tr th:first-child {
+  text-align: start;
+  padding-left: 1rem;
+}
+
+.table__header th {
+  background-color: #7ed956;
+}
+
+.table__header th:first-child {
+  text-align: start;
+  padding-left: 1rem;
+  background-color: #007e34;
+  color: #fff;
+}
+
+.table__content {
+  text-align: center;
+}
+
+.table__price {
+  background-color: #dfdfdf;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 8px solid #007e34;
+}
+
+.footer h2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.sign {
+  text-align: end;
+}
+
+.sign h2 {
+  font-size: 1.2rem;
+}
