@@ -45,6 +45,7 @@ body {
   margin-bottom: 72px;
   display: flex;
   justify-content: space-between;
+  border-top: 5px solid #007e34;
   grid-row: 2 / 3;
 }
 
@@ -74,7 +75,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: end;
-  border-top: 5px solid #007e34;
 }
 
 .header__title h1 {
