@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+@media print {
+  body {
+    font-family: "Poppins", sans-serif !important;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.exportProfileContent {
+  font-family: "Poppins", Arial, sans-serif;
+
+  width: 100%;
+  padding: 0px 40px;
+}
+
+/* Green Bars*/
+.greenbar {
+  width: 100%;
+  height: 48px;
+  background-color: #287dc2;
+}
+
+.greenbar--top {
+  border-bottom: solid 4px #133274;
+}
+
+/* Main Table */
+
+table,
+.main__table,
+.main__table tbody tr,
+#item_45,
+.footer__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.main__table thead tr td,
+.footer__table tr td {
+  padding: 0 16px;
+}
+
+.main__table .logo {
+  width: 240px;
+  margin: 24px 0;
+}
+
+.main__table .title {
+  text-transform: uppercase;
+  text-align: end;
+  font-size: 48px;
+  letter-spacing: 8px;
+}
+
+.main__table .name,
+.main__table .email {
+  font-weight: 500;
+}
+
+.main__table .ticket,
+.main__table .date,
+.totals__table .total-title,
+.footer__table td:last-child {
+  text-align: end;
+}
+
+/* Product Table */
+#item_45 {
+  margin-bottom: 24px;
+}
+
+#item_45 thead tr th {
+  background-color: #287dc2;
+}
+
+#item_45 thead tr th:first-child,
+#item_45 tr td:first-child {
+  text-align: start;
+  padding-left: 16px;
+}
+
+#item_45 thead tr th:first-child {
+  width: 70%;
+  background-color: #133274;
+  color: #fff;
+}
+
+#item_45 thead tr th:nth-child(3n-1) {
+  width: 15%;
+}
+
+#item_45 th,
+#item_45 td {
+  border-bottom: 1px solid #999;
+}
+
+#item_45 tr td,
+.totals__table .total-value {
+  text-align: center;
+}
+
+#item_45 tr td:last-child {
+  background-color: #dfdfdf;
+}
+
+/* Totals */
+.totals__table {
+  border-bottom: solid 2px #133274;
+}
+
+.totals__table tr td {
+  padding-bottom: 24px;
+}
+
+.totals__table .total-title {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Footer */
+.footer__table {
+  margin: 48px 0 24px;
+}
+
+.greenbar--bottom {
+  border-top: solid 4px #133274;
+}

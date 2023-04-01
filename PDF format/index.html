@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="greenbar greenbar--top"></div>
+    <table class="main__table">
+      <thead>
+        <tr>
+          <td>
+            <img src="./img/sharkapp_logo.jpg" class="logo" alt="logo" />
+          </td>
+          <td>
+            <h1 class="title">presupuesto</h1>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>CLIENTE: <span class="name">{!firstName.value} {!lastName.value}</span></p>
+          </td>
+        </tr>
+        <tr></tr>
+        <tr>
+          <td><p class="email">{!email.value}</p></td>
+          <td>
+            <p class="ticket">N° <span>{!folderId.value}</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="tel">{!phoneNumberMobile.value}</p>
+          </td>
+          <td>
+            <p class="date">{!todayDate.value}</p>
+          </td>
+        </tr>
+      </thead>
+      <!-- BODY -->
+      <tbody>
+        <tr>
+          <td colspan="2">
+            <table id="item_45">
+              <thead>
+                <tr>
+                  <th>DESCRIPCIÓN</th>
+                  <th>CANTIDAD</th>
+                  <th>TOTAL</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>Website Design</td>
+                <td>02</td>
+                <td>$150</td>
+              </tr>
+              <tr>
+                <td>Nesletter Design</td>
+                <td>01</td>
+                <td>$130</td>
+              </tr>
+              <tr>
+                <td>Book Cover Design</td>
+                <td>05</td>
+                <td>$120</td>
+              </tr>
+              <tr>
+                <td>Logo Design</td>
+                <td>03</td>
+                <td>$300</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <table class="totals__table">
+            <td style="width: 85%">
+              <h3 class="total-title">SUBTOTAL:</h3>
+              <h3 class="total-title">ENVIO:</h3>
+              <h3 class="total-title">TOTAL:</h3>
+            </td>
+            <td style="width: 15%">
+              <p class="total-value">{!schemaField_3_72.value}</p>
+              <p class="total-value">{!schemaField_3_42.value}</p>
+              <p class="total-value">{!schemaField_3_39.value}</p>
+            </td>
+          </table>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- FOOTER -->
+    <table class="footer__table">
+      <td style="width: 75%" valign="top">
+        <div class="observations">
+          <h2>OBSERVACIONES:</h2>
+          <p>{!schemaField_3_73.value}</p>
+        </div>
+      </td>
+      <td style="width: 25%">
+        <h2>Sharkapp - Startup</h2>
+        <p>Av. una calle N°4443, General San Martín</p>
+        <p>Linea 1: 11-3123-2651</p>
+        <p>Linea 2: 11-2332-1122</p>
+        <p>sharkapp@gmail.com</p>
+        <p>WWW.SHARKAPP.COM.AR</p>
+      </td>
+    </table>
+    <div class="greenbar greenbar--bottom"></div>
+  </body>
+</html>
